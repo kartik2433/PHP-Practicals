@@ -10,14 +10,14 @@ if ($conn->connect_error) {
 else{
   echo "Connected successfully"."<br>"; }
 
-$sql="CREATE DATABASE IT_WORKSHOP1;";
+$sql="CREATE DATABASE IT_WORKSHOP;";
   if($conn->query($sql) == TRUE) {
     echo "DATABASE CREATED SUCCESSFULLY...!!!."."<br>";
 }
   else {
     echo "DATABASE NOT CREATED...!!!."."<br>"; } 
      
-$sql="DROP DATABASE IT_WORKSHOP1;";
+$sql="DROP DATABASE IT_WORKSHOP;";
 if($conn->query($sql) == TRUE) {
   echo "DATABASE DROPED SUCCESSFULLY...!!!."."<br>";
 }
